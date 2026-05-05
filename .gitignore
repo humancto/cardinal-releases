@@ -1,0 +1,3 @@
+.DS_Store
+# DMGs are uploaded as GitHub release assets, not checked into git.
+*.dmg
