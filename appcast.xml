@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Cardinal — interactive handbook of early math</title>
+        <link>https://humancto.github.io/cardinal-releases/appcast.xml</link>
+        <description>Updates for Cardinal.</description>
+        <language>en</language>
+        <item>
+            <title>Version 0.9.5</title>
+            <pubDate>Tue, 05 May 2026 22:15:05 -0700</pubDate>
+            <sparkle:version>95</sparkle:version>
+            <sparkle:shortVersionString>0.9.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://humancto.github.io/cardinal-releases/release-notes/v0.9.5.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/humancto/cardinal-releases/releases/download/v0.9.5/Cardinal-v0.9.5.dmg"
+                       sparkle:edSignature="Y9bHBL6C+sEsRxy8CazI1HdeUNS/EUgbJp79HeeJh4QQ6HS/KkGM6Oe5WXfIqZBPmo9hsgRFh08446mCTe7pAQ==" length="12305683"
+                       type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
