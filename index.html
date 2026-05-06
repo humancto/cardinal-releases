@@ -91,27 +91,17 @@
         <h2>How to install.</h2>
         <ol>
           <li>Click the download button above. Open <code>Cardinal-latest.dmg</code> when it lands.</li>
-          <li>Drag <code>CardinalDemo.app</code> onto the <code>Applications</code> shortcut.</li>
-          <li>
-            <b>Strip the macOS download quarantine.</b> Open Terminal and run:
-            <pre><code>xattr -dr com.apple.quarantine /Applications/CardinalDemo.app</code></pre>
-            macOS 14 and later block downloaded ad-hoc-signed apps until this one-time flag is cleared. (Same step as Homebrew, MacPorts, and many small open-source apps.)
-          </li>
-          <li>
-            Open Applications and double-click Cardinal.
-            If macOS still says <em>"can't be opened because Apple cannot check it"</em>:
-            open <b>System Settings → Privacy &amp; Security</b>, scroll to the <b>Open Anyway</b> button next to CardinalDemo, click it, then re-open Cardinal from Applications.
-          </li>
-          <li>That's the only time. Double-click works forever after.</li>
+          <li>Drag <code>Cardinal.app</code> onto the <code>Applications</code> shortcut.</li>
+          <li>Open Applications and double-click Cardinal.</li>
         </ol>
         <p class="footnote">
-          <em>Why the extra step?</em> Cardinal is ad-hoc signed locally, not yet notarised by Apple Developer ID. macOS 14+ requires the quarantine strip on first install. macOS 26 / Tahoe is stricter still and adds the System Settings → "Open Anyway" gate. Notarised builds are coming once the App Store ID is set up.
+          That's it. Cardinal is signed by <em>the developer</em> (Developer ID) and notarised by Apple — macOS opens it directly with no warnings. If you have an older <code>CardinalDemo.app</code> in <code>/Applications</code> from v0.9.3 or earlier, you can drag it to the Trash; this is the same app, renamed.
         </p>
       </section>
 
       <footer>
         <p>
-          Cardinal · v0.9.3 · made with care for the children who learn at their own pace.
+          Cardinal · v0.9.3.1 · made with care for the children who learn at their own pace.
         </p>
       </footer>
     </div>
