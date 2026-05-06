@@ -21,7 +21,7 @@ Older releases are kept under [Releases](https://github.com/humancto/cardinal-re
 3. Drag `Cardinal.app` onto the **Applications** shortcut.
 4. Open Applications and double-click Cardinal.
 
-That's it. Cardinal is signed with a Developer ID (the developer, Team `(Team ID redacted)`) and notarized by Apple, so macOS opens it directly with no Gatekeeper warnings.
+That's it. Cardinal is signed with an Apple Developer ID and notarized by Apple, so macOS opens it directly with no Gatekeeper warnings.
 
 If you have an older `CardinalDemo.app` from v0.9.3 or earlier, drag it to the Trash — the app was renamed to `Cardinal.app` in v0.9.3.1 and the bundle ID is unchanged, so your profile, favorites, and progress carry over.
 
@@ -70,11 +70,9 @@ hdiutil detach /tmp/cardinal-mount
 
 This repository contains **binary releases only**. The Cardinal source code is private; pricing and source-availability decisions are not yet finalized.
 
-## Contact
+## Bug reports
 
-Author: **the developer** ([@humancto](https://github.com/humancto)) — `humancto@users.noreply.github.com`
-
-For bug reports, please open a [GitHub issue](https://github.com/humancto/cardinal-releases/issues) with steps to reproduce, the version (`Settings → About`), and your macOS version.
+Please open a [GitHub issue](https://github.com/humancto/cardinal-releases/issues) with steps to reproduce, the version (`Settings → About`), and your macOS version.
 
 ---
 
