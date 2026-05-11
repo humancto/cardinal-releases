@@ -140,6 +140,17 @@ Pricing decision per `humancto/cardinal/ROADMAP.md` §176 lands ≥ 30 days befo
 
 ## Audit log
 
+### 2026-05-11 — v0.10.9 feedback infrastructure (Archith)
+
+- New "Tell me what helps" section added with GitHub Issues + Discussions + FEEDBACK.md links.
+- Footer version bumped v0.10.7 → v0.10.9.
+- Date-stamp comment refreshed to PRD v0.10.9 / ROADMAP v0.10.9.
+- §1 Platform sentinel `grep -ciE "ipad"` = 0. PASS.
+- §4 Identity-first sentinel: 2 identity-first matches, 0 forbidden phrases. PASS.
+- §6 Pricing copy: still "Free during closed beta" — no pricing commitment. PASS.
+- §9 Cloudflare token: still placeholder. Acceptable pre-launch.
+- New surfaces: GitHub Discussions enabled at github.com/humancto/cardinal-releases/discussions; two issue templates published (feature-request.yml, bug-report.yml) with privacy-acknowledgement checkboxes; FEEDBACK.md committed with the full feedback-channel guide.
+
 ### 2026-05-06 — Slice E PR-B (Archith)
 
 - §1 Platform claims: corrected `<meta description>` to remove "iPad" (PRD now Mac-first).
