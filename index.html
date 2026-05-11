@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cardinal — an interactive handbook of early math</title>
-    <meta name="description" content="A calm, interactive handbook of early math (ages 3–11), designed for autistic kids and the families who learn alongside them. iPad &amp; Mac, native, offline, one-time purchase. No signup, no tracking." />
+    <meta name="description" content="A calm, interactive handbook of early math (ages 3–11), designed for autistic kids and the families who learn alongside them. Mac, native, offline, free during closed beta. No signup, no tracking." />
     <meta property="og:title" content="Cardinal — an interactive handbook of early math" />
     <meta property="og:description" content="One hundred and forty-three chapters, in the order children actually learn them. No signup, no tracking, no time pressure." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,6 +32,13 @@
       data-cf-beacon='{"token": "REPLACE_WITH_CF_TOKEN"}'></script>
   </head>
   <body>
+    <!-- LandingAudit: passed 2026-05-06 against PRD v0.10.8, ROADMAP v0.10.8.
+         See LandingAudit.md for full checklist + audit log. Next mandatory
+         re-audit: before v1.0 launch. -->
+    <!-- audit-sentinel: do NOT add platform/identity/pricing keywords inside
+         HTML comments. The LandingAudit checklist runs flat `grep -iE` over
+         this file; trigger words in comments will false-positive every audit. -->
+
     <div class="page">
       <header class="hero">
         <div class="brand">CARDINAL</div>
@@ -55,6 +62,14 @@
         </p>
       </header>
 
+      <!--
+        chapter-count placeholder (LandingAudit.md): the literal number
+        below must equal `prototype/.build/chapter-count.txt` written by
+        `build-app.sh` on the most recent build. Current expected: 143.
+        Re-audit step: rg -E "[Oo]ne hundred and forty-three chapters" index.html
+        and diff against the artifact. Discrepancy = either backfill the
+        page or audit the catalog drift.
+      -->
       <section id="what" class="section">
         <h2>One hundred and forty-three chapters,<br />in the order children actually learn them.</h2>
         <p class="lede">
@@ -98,8 +113,12 @@
             <p>Carry-over isn't a procedure to memorise; it's ten ones bundling into a new ten-rod, with the carried "1" appearing the moment the bundle happens. Long division shares dots into piles physically. Subtraction across zero un-bundles a hundred into ten tens, then one of those into ten ones.</p>
           </div>
           <div class="feature">
-            <h3>One purchase. No subscription.</h3>
-            <p>Buy once, own forever. No account. No data leaves your Mac. Lifetime updates included. Family Sharing eligible.</p>
+            <h3>Accessibility, audited — not promised.</h3>
+            <p>Every chapter ships with a per-chapter accessibility audit: VoiceOver summary, Switch Control path, Voice Control target names, Dynamic Type behaviour, Reduce Motion behaviour, target-size floor. The audit is a verifiable artifact in the codebase, source-scanned on every build. "We care about accessibility" is the cheapest claim software makes; Cardinal turns it into a contract.</p>
+          </div>
+          <div class="feature">
+            <h3>No account. Free during closed beta.</h3>
+            <p>No signup. No data leaves your Mac. Pricing decision lands before v1.0 launches; the closed-beta build is free for participating families.</p>
           </div>
         </div>
       </section>
