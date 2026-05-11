@@ -8,6 +8,17 @@
         <description>Updates for Cardinal.</description>
         <language>en</language>
         <item>
+            <title>Version 0.10.10</title>
+            <pubDate>Mon, 11 May 2026 15:12:55 -0700</pubDate>
+            <sparkle:version>1010</sparkle:version>
+            <sparkle:shortVersionString>0.10.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://humancto.github.io/cardinal-releases/release-notes/v0.10.10.html</sparkle:releaseNotesLink>
+            <enclosure url="https://github.com/humancto/cardinal-releases/releases/download/v0.10.10/Cardinal-v0.10.10.dmg"
+                       sparkle:edSignature="Kh0CPMgDkOqjpQQy5XISklYOR3ZozzMBhMdbMVaxcsA00pCqWwIY5ZZ9R0tmPolmbh4RbqwPPfW7xn217o8WCg==" length="13023232"
+                       type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.10.9</title>
             <pubDate>Mon, 11 May 2026 13:34:41 -0700</pubDate>
             <sparkle:version>109</sparkle:version>
