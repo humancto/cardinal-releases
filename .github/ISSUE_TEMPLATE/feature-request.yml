@@ -1,0 +1,58 @@
+name: Feature request
+description: Suggest a chapter, lesson improvement, or accessibility refinement.
+title: "[Feature] "
+labels: ["feature-request", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest something. Cardinal is a one-developer project
+        built by an autistic kid's parent — every concrete suggestion has weight.
+
+        **Privacy floor:** please don't include your child's name, age, location, or anything
+        identifying. Cardinal's beta protocol (`docs/observation-protocol.md` in the codebase)
+        commits to no-audio/no-video/no-kid-identifiers; we extend the same courtesy here.
+  - type: dropdown
+    id: surface
+    attributes:
+      label: What part of Cardinal does this touch?
+      multiple: false
+      options:
+        - A specific chapter (please name in description)
+        - The Home / Chapter Map
+        - The Parent Brief / Accessibility Audit
+        - Onboarding (the calm-landing screen)
+        - Sound / speech
+        - Settings / parent area
+        - Accessibility (VoiceOver, Switch Control, Voice Control, Reduce Motion, Dynamic Type)
+        - Performance / latency
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What would help?
+      description: |
+        Describe the change in plain language. If it's a chapter idea, what's the math concept?
+        If it's an accessibility refinement, what's the current friction?
+      placeholder: |
+        e.g. "The Counting chapter could really use a way to tap-and-hold on a dot to hear
+        its number spoken, even if the kid hasn't tapped through to that count yet…"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else? (optional)
+      description: Age range, communication profile, sensory profile, math level, input method.
+      placeholder: "e.g. K-2, AAC user, sensory-sensitive, addition-level, mouse + keyboard."
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy acknowledgement
+      options:
+        - label: I have NOT included my child's name, image, voice, or location.
+          required: true
+        - label: I understand that Archith may respond publicly to this issue, and that aggregated themes may inform Cardinal's roadmap.
+          required: true

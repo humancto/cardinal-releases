@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussion (general questions, parent stories, kid wins)
+    url: https://github.com/humancto/cardinal-releases/discussions
+    about: For general questions, sharing what worked for your kid, or parent-to-parent stories. Bugs and feature requests have dedicated templates above.
+  - name: Direct email (private / sensitive)
+    url: mailto:archith.rapaka@gmail.com
+    about: For anything you don't want public — accessibility blockers tied to a kid's specific profile, sensitive accommodations, or beta-program inquiries.

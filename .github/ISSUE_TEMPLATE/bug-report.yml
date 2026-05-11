@@ -1,0 +1,70 @@
+name: Bug report
+description: Something behaved unexpectedly, crashed, or didn't work as documented.
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for catching this. Cardinal is offline + local-first so reproducing on your
+        Mac is the only signal we have — please include the steps.
+
+        **Privacy floor:** screenshots are welcome, but please crop or redact your child's
+        name, profile photo, or any identifying detail before uploading.
+  - type: input
+    id: version
+    attributes:
+      label: Cardinal version
+      description: Check Cardinal → About in the menu bar, or the bottom of the chapter detail page.
+      placeholder: "e.g. v0.10.8"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "e.g. macOS 14.5"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      placeholder: |
+        - Opened the Addition chapter from Home.
+        - Dragged a dot from the left group.
+        - The dot went all the way off-screen instead of into the merge area.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: "The dot should have stopped at the merge area."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Cardinal.
+        2. Go to Chapters → Addition.
+        3. Drag the leftmost dot toward the right edge.
+        4. …
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope (optional, helps triage)
+      options:
+        - label: This is a crash (app quits unexpectedly).
+        - label: This is an accessibility blocker (VoiceOver / Switch Control / Voice Control / Reduce Motion / Dynamic Type).
+        - label: This is a UI regression (something used to work; now doesn't).
+        - label: This affects my child's ability to use the chapter.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy acknowledgement
+      options:
+        - label: I have NOT included my child's name, image, voice, or location in screenshots or descriptions.
+          required: true
