@@ -68,3 +68,5 @@ body:
       options:
         - label: I have NOT included my child's name, image, voice, or location in screenshots or descriptions.
           required: true
+        - label: Any screenshots attached are cropped or redacted to remove identifying detail (profile photo, name on the chapter card, anything visible in another app window).
+          required: true
