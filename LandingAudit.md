@@ -2,7 +2,7 @@
 
 _Per Slice E of `humancto/cardinal` ROADMAP.md. The landing page (`index.html`) makes specific claims about Cardinal. Some are durable (offline, no tracking); others rot under product evolution (chapter count, platform list, pricing). This checklist is the rot-detection contract — run it before every release and again 30 days before any v1.0 launch._
 
-> **Last audit:** 2026-05-12 — v0.10.14 footer + audit-block bump. **Next mandatory:** before v1.0 launch.
+> **Last audit:** 2026-05-12 — v0.10.15 footer bump + v0.10.14 yank. **Next mandatory:** before v1.0 launch.
 
 ---
 
@@ -139,6 +139,20 @@ Pricing decision per `humancto/cardinal/ROADMAP.md` §176 lands ≥ 30 days befo
 ---
 
 ## Audit log
+
+### 2026-05-12 — v0.10.15 footer bump (re-release after v0.10.14 stale-binary yank) (Archith)
+
+- **Codebase ships**: `humancto/cardinal#34` (GreetingStrip tap target) merged at `740b6dc`, but v0.10.14 packaging shipped a stale binary. `humancto/cardinal#35` (`bb22fff`) closed the `build-dmg.sh` regression with forced rebuild + two-layer version-pin; v0.10.15 re-released with the actual binary inside (independently verified via `plutil -extract CFBundleShortVersionString` on the in-DMG Info.plist).
+- **`cardinal-releases#5`** merged — `appcast.xml` v0.10.14 `<item>` yanked. Comment in the XML documents the yank for the next maintainer.
+- **Footer version** v0.10.14 → v0.10.15.
+- **Audit-block** PRD v0.10.14 → v0.10.15.
+- §1 platform sentinel `grep -ciE "ipad"` = 0. PASS.
+- §2 chapter count: 146 unchanged. PASS.
+- §3 privacy claims: all three identifiers present. PASS.
+- §4 identity-first sentinel: PASS.
+- §6 pricing copy: still "Free during closed beta". PASS.
+
+**Next audit due:** before v1.0 launch.
 
 ### 2026-05-12 — v0.10.14 home-screen tap-target fix (Archith)
 
