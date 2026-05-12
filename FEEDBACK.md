@@ -31,18 +31,16 @@ Best for: general questions, parent stories, "this worked for my kid" wins, aski
 
 This is the lower-stakes place. No template, no triage label, just a conversation. Other Cardinal parents will probably reply alongside Archith.
 
-### 3. Direct email (for sensitive stuff)
+### 3. Private channel (for sensitive stuff)
 
-Best for: anything tied to a specific kid's profile, beta program inquiries, or anything you'd rather not say publicly.
+For anything tied to a specific kid's profile, beta-program inquiries, or anything you'd rather not say publicly: use [**GitHub Private Vulnerability Reporting**](https://github.com/humancto/cardinal-releases/security/advisories/new). Despite the name, it works for any private-disclosure note — only the maintainer sees it. Github account required (free).
 
-→ **archith.rapaka@gmail.com**
-
-I read every email. Response time is usually 1-3 days.
+A dedicated contact alias may land before closed-beta opens; until then GitHub Private Vulnerability Reporting is the supported private path.
 
 ## What happens to your feedback
 
 - **Public issues and discussions** go into Cardinal's roadmap directly. The ROADMAP is in the codebase repo at `humancto/cardinal/ROADMAP.md` — open and dated.
-- **Private emails** I keep confidential. Aggregated themes might inform the roadmap, but no individual email is quoted, screenshotted, or shared without your written re-consent.
+- **Private reports** (via GitHub) are read by the maintainer only. Aggregated themes might inform the roadmap, but no individual report is quoted, screenshotted, or shared without your written re-consent.
 - **Aggregated patterns** across many families may show up in beta-findings documents (also public, no names). The closed-beta observation protocol committed in writing is at [`docs/observation-protocol.md`](https://github.com/humancto/cardinal/blob/main/docs/observation-protocol.md).
 
 ## What I _can't_ promise
