@@ -18,17 +18,18 @@
                        sparkle:edSignature="Ii2XuwWEQYfZgq7Kp55ax2iZVZ1wqjWvluY7KkhsNupmPjgb55I5yljxWbBanTgkceRFISGUoQYPNaWK46dtAg==" length="13128438"
                        type="application/octet-stream" />
         </item>
-        <item>
-            <title>Version 0.10.14</title>
-            <pubDate>Mon, 11 May 2026 19:27:33 -0700</pubDate>
-            <sparkle:version>1014</sparkle:version>
-            <sparkle:shortVersionString>0.10.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://humancto.github.io/cardinal-releases/release-notes/v0.10.14.html</sparkle:releaseNotesLink>
-            <enclosure url="https://github.com/humancto/cardinal-releases/releases/download/v0.10.14/Cardinal-v0.10.14.dmg"
-                       sparkle:edSignature="pmEhjP+gTo0t9faOlQCIUnRj3pQHqZ6zn1/4a4pz+ZBtUXZ5IAu09g1UQkKiL/5PoV0cJNP/RUZz43cIGkxpBQ==" length="13126919"
-                       type="application/octet-stream" />
-        </item>
+        <!-- v0.10.14 YANKED on 2026-05-12.
+             The v0.10.14 DMG shipped a stale binary whose Info.plist
+             read CFBundleShortVersionString="0.10.13" — the file name
+             and this appcast claimed v0.10.14 but the binary inside
+             was the v0.10.13 binary (build-dmg.sh skipped the rebuild
+             because Cardinal.app already existed in the working tree).
+             Sparkle would "update" clients to v0.10.14 but the
+             relaunched app still showed v0.10.13 internally.
+             v0.10.15 is the proper re-release with the actual binary;
+             the v0.10.14 GitHub release stays for archival but no
+             client should be offered it. See PR #35 on humancto/cardinal
+             for the build-dmg.sh footgun closure. -->
         <item>
             <title>Version 0.10.13</title>
             <pubDate>Mon, 11 May 2026 18:31:17 -0700</pubDate>
