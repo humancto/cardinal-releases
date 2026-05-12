@@ -6,7 +6,7 @@
     <title>Cardinal — an interactive handbook of early math</title>
     <meta name="description" content="A calm, interactive handbook of early math (ages 3–11), designed for autistic kids and the families who learn alongside them. Mac, native, offline, free during closed beta. No signup, no tracking." />
     <meta property="og:title" content="Cardinal — an interactive handbook of early math" />
-    <meta property="og:description" content="One hundred and forty-three chapters, in the order children actually learn them. No signup, no tracking, no time pressure." />
+    <meta property="og:description" content="One hundred and forty-six chapters, in the order children actually learn them. No signup, no tracking, no time pressure." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,7 +32,7 @@
       data-cf-beacon='{"token": "REPLACE_WITH_CF_TOKEN"}'></script>
   </head>
   <body>
-    <!-- LandingAudit: passed 2026-05-11 against PRD v0.10.9, ROADMAP v0.10.9.
+    <!-- LandingAudit: passed 2026-05-12 against PRD v0.10.14, ROADMAP v0.10.14.
          See LandingAudit.md for full checklist + audit log. Next mandatory
          re-audit: before v1.0 launch. -->
     <!-- audit-sentinel: do NOT add platform/identity/pricing keywords inside
@@ -65,15 +65,15 @@
       <!--
         chapter-count placeholder (LandingAudit.md): the literal number
         below must equal `prototype/.build/chapter-count.txt` written by
-        `build-app.sh` on the most recent build. Current expected: 143.
-        Re-audit step: rg -E "[Oo]ne hundred and forty-three chapters" index.html
+        `build-app.sh` on the most recent build. Current expected: 146.
+        Re-audit step: rg -E "[Oo]ne hundred and forty-six chapters" index.html
         and diff against the artifact. Discrepancy = either backfill the
         page or audit the catalog drift.
       -->
       <section id="what" class="section">
-        <h2>One hundred and forty-three chapters,<br />in the order children actually learn them.</h2>
+        <h2>One hundred and forty-six chapters,<br />in the order children actually learn them.</h2>
         <p class="lede">
-          Cardinal walks a child from sorting and one-to-one correspondence through addition with carry-over, long division, fractions, and reading the clock. Every concept gets its own visual treatment. Every chapter has a playback transport so it can be watched as slowly as needed, scrubbed back, or paused.
+          Cardinal walks a child from sorting and one-to-one correspondence through addition with carry-over, long division, fractions with unlike denominators, decimals, and reading the clock. Every concept gets its own visual treatment. Every chapter has a playback transport so it can be watched as slowly as needed, scrubbed back, or paused.
         </p>
 
         <div class="bands">
@@ -84,7 +84,7 @@
           <div class="band"><div class="band-stripe" style="background:#8e3818"></div><div><b>Operations within 10</b><span>ages 6–7</span></div><p>Addition, take-away, find-the-difference, fact families.</p></div>
           <div class="band"><div class="band-stripe" style="background:#505057"></div><div><b>Operations within 100</b><span>ages 7–9</span></div><p>Make-10 strategy, carry-over, borrow, subtraction across zero.</p></div>
           <div class="band"><div class="band-stripe" style="background:#604578"></div><div><b>Multiplication &amp; Division</b><span>ages 7–10</span></div><p>Skip counting, arrays, every table 0–10, long multiplication, long division.</p></div>
-          <div class="band"><div class="band-stripe" style="background:#8e3e64"></div><div><b>Fractions, Time, Money &amp; World</b><span>ages 8–11</span></div><p>Halves and thirds, equivalent fractions, decimals, the analog clock, coins, perimeter, area.</p></div>
+          <div class="band"><div class="band-stripe" style="background:#8e3e64"></div><div><b>Fractions, Time, Money &amp; World</b><span>ages 8–11</span></div><p>Halves and thirds, equivalent fractions, adding &amp; subtracting fractions (same and unlike denominators), fraction multiplication, decimal arithmetic, × 10 / × 100 / × 1000, the analog clock, coins, perimeter, area.</p></div>
         </div>
       </section>
 
@@ -117,6 +117,10 @@
             <p>Every chapter ships with a per-chapter accessibility audit: VoiceOver summary, Switch Control path, Voice Control target names, Dynamic Type behaviour, Reduce Motion behaviour, target-size floor. The audit is a verifiable artifact in the codebase, source-scanned on every build. "We care about accessibility" is the cheapest claim software makes; Cardinal turns it into a contract.</p>
           </div>
           <div class="feature">
+            <h3>Exact math. No floating-point hiccups.</h3>
+            <p>Fractions and decimals use pure integer arithmetic under the hood. The classic 0.1 + 0.2 = 0.3 stays 0.3 — not the 0.30000000000000004 that calculators show. Kids see what they expect.</p>
+          </div>
+          <div class="feature">
             <h3>No account. Free during closed beta.</h3>
             <p>No signup. No data leaves your Mac. Pricing decision lands before v1.0 launches; the closed-beta build is free for participating families.</p>
           </div>
@@ -142,17 +146,19 @@
         </p>
         <p>
           <a class="cta-secondary" href="https://github.com/humancto/cardinal-releases/issues/new/choose">Send feedback on GitHub</a>
-          &nbsp;or&nbsp;
+          &nbsp;·&nbsp;
           <a class="cta-secondary" href="https://github.com/humancto/cardinal-releases/discussions">Join the discussion</a>
+          &nbsp;·&nbsp;
+          <a class="cta-secondary" href="https://github.com/humancto/cardinal-releases/security/advisories/new">Private report</a>
         </p>
         <p class="footnote">
-          Two issue templates — feature request and bug report — both privacy-aware. No child names, photos, or voices required (or wanted). Read the full <a href="https://github.com/humancto/cardinal-releases/blob/main/FEEDBACK.md">feedback guide</a> first if you want context.
+          Issue templates have built-in privacy gates — no child names, photos, or voices required (or wanted). Read the full <a href="https://github.com/humancto/cardinal-releases/blob/main/FEEDBACK.md">feedback guide</a> for the channel breakdown, or <a href="https://github.com/humancto/cardinal-releases/blob/main/SECURITY.md">SECURITY.md</a> for the private-disclosure path.
         </p>
       </section>
 
       <footer>
         <p>
-          Cardinal · v0.10.9 · made with care for the children who learn at their own pace.
+          Cardinal · v0.10.14 · made with care for the children who learn at their own pace.
         </p>
       </footer>
     </div>

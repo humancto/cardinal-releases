@@ -44,10 +44,14 @@ Cardinal v0.9.5+ includes [Sparkle](https://sparkle-project.org)-based auto-upda
 
 ## What's inside
 
-- **143 chapters across 8 bands** (Foundations through Fractions, Time, Money & World — ages 3–11).
+- **146 chapters across 8 bands** (Foundations through Fractions, Time, Money & World — ages 3–11).
+- **v0.11 Cluster A** (shipped through v0.10.13): adding & subtracting fractions with same and unlike denominators (animated re-cut visualization), fraction multiplication (× whole and × fraction with area model), decimal addition / subtraction (with carry / borrow indicators), decimal × 10 / × 100 / × 1000 (with the decimal point physically sliding via `matchedGeometryEffect`).
 - Errorless, kid-paced, no scoring, no streaks, no time pressure.
+- **Pure integer arithmetic** for fractions and decimals — 0.1 + 0.2 = 0.3 exactly. No floating-point rounding visible anywhere in the math.
+- **Reduce Motion respected** throughout — kids with motion sensitivity turn the System Settings flag and Cardinal honors it.
+- **Per-chapter accessibility audit** as a verifiable artifact (VoiceOver summary, Switch Control path, Voice Control targets, Dynamic Type behavior, Reduce Motion behavior, target sizes). Source-scanned on every build.
 - **Region toggles** for currency (USD / GBP / INR / EUR / AUD), units (metric / US imperial), and date format.
-- **Practice tab** with a deck per chapter — drag, tap, drop. The dot returns home if it's not where it should be.
+- **Practice tab** with a deck per chapter — drag, tap, drop. Prompts read aloud automatically when Sound is on. The dot returns home if it's not where it should be.
 - Calm onboarding screen, profile (name + photo), favorites, recently-opened lane, custom themes (dot ↔ star / heart / leaf / planet).
 
 ## Verifying the download
@@ -70,9 +74,15 @@ hdiutil detach /tmp/cardinal-mount
 
 This repository contains **binary releases only**. The Cardinal source code is private; pricing and source-availability decisions are not yet finalized.
 
-## Bug reports
+## Feedback channels
 
-Please open a [GitHub issue](https://github.com/humancto/cardinal-releases/issues) with steps to reproduce, the version (`Settings → About`), and your macOS version.
+Cardinal is free and maintained by one parent. Telling us what worked is the only signal we get.
+
+- **Public**: [Open an Issue](https://github.com/humancto/cardinal-releases/issues/new/choose) (feature request or bug report — privacy-gated templates) or [Join the Discussion](https://github.com/humancto/cardinal-releases/discussions) (parent-to-parent stories, kid wins, general questions).
+- **Private**: [GitHub Private Vulnerability Reporting](https://github.com/humancto/cardinal-releases/security/advisories/new) — maintainer-only visibility, works for any private-disclosure note (specific kid profile, beta inquiries, consent-deletion requests). See [SECURITY.md](./SECURITY.md).
+- **In-app**: Settings → Parent area → Send feedback — three rows opening these channels in your system browser. Zero personal email exposed in the app.
+
+Read the full [FEEDBACK.md](./FEEDBACK.md) guide for what gets read, what gets shipped, and what the privacy floor is.
 
 ---
 
