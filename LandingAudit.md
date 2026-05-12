@@ -2,7 +2,7 @@
 
 _Per Slice E of `humancto/cardinal` ROADMAP.md. The landing page (`index.html`) makes specific claims about Cardinal. Some are durable (offline, no tracking); others rot under product evolution (chapter count, platform list, pricing). This checklist is the rot-detection contract — run it before every release and again 30 days before any v1.0 launch._
 
-> **Last audit:** 2026-05-06 — Slice E PR-B. **Next mandatory:** before v1.0 launch.
+> **Last audit:** 2026-05-12 — v0.10.14 footer + audit-block bump. **Next mandatory:** before v1.0 launch.
 
 ---
 
@@ -139,6 +139,37 @@ Pricing decision per `humancto/cardinal/ROADMAP.md` §176 lands ≥ 30 days befo
 ---
 
 ## Audit log
+
+### 2026-05-12 — v0.10.14 home-screen tap-target fix (Archith)
+
+- **Codebase ship**: `humancto/cardinal#34` merged squash — `HomeView` greeting strip now opens `ProfileEditorSheet` on tap. New source-scan invariant `HomeGreetingTapTargetChecks` (7 assertions) pins the wiring against regression. Apple-expert APPROVE on the final diff after one fold-in cycle (M1 source-scan + M2 a11y label/hint).
+- **Landing copy** unchanged content-wise — no chapter-count change, no platform claim change, no privacy claim change. Only the footer version + audit-block date/version bump.
+- **Footer version** v0.10.13 → v0.10.14.
+- **Audit-block date** 2026-05-11 / PRD v0.10.13 → 2026-05-12 / PRD v0.10.14.
+- §1 platform sentinel `grep -ciE "ipad"` = 0. PASS.
+- §2 chapter count: 146 unchanged. PASS.
+- §3 privacy claims: all three identifiers present. PASS.
+- §4 identity-first sentinel: PASS.
+- §6 pricing copy: still "Free during closed beta". PASS.
+- §8 date stamp: refreshed to 2026-05-12 / v0.10.14. PASS.
+
+**Next audit due:** before v1.0 launch.
+
+### 2026-05-11 — v0.10.13 chapter-count + Cluster A copy + email scrub (Archith)
+
+- **Chapter count bumped** 143 → 146 in `og:description`, hero H2 ("One hundred and forty-six chapters"), chapter-count placeholder comment, README "What's inside". Reflects v0.11 Cluster A landing.
+- **Fractions band description rewritten** to name the Cluster A additions explicitly: adding/subtracting (same + unlike), fraction multiplication, decimal arithmetic, × 10 / × 100 / × 1000.
+- **New feature card "Exact math. No floating-point hiccups."** — calls out the 0.1 + 0.2 = 0.3 invariant. Pedagogically the most distinct claim Cardinal can make vs typical ed-tech.
+- **Feedback section gains "Private report" CTA** — third row pointing at GitHub Private Vulnerability Reporting (SECURITY.md). Replaces the "or" connector with `·` separator.
+- **Footer version** bumped v0.10.9 → v0.10.13.
+- **README.md** rewritten "What's inside" to lead with v0.11 Cluster A, added Reduce Motion / pure-integer-arithmetic / audit-as-artifact bullets, rewrote "Bug reports" section into "Feedback channels" with public/private/in-app paths.
+- **Maintainer-email scrub** — `FEEDBACK.md` private-channel re-routed to GitHub Private Vulnerability Reporting; `ISSUE_TEMPLATE/config.yml` contact-link similarly; new `SECURITY.md` landing. Zero personal email exposure in public-facing files.
+- §1 sentinel `grep -ciE "ipad"` = 0. PASS.
+- §4 identity-first sentinel: PASS.
+- §6 pricing copy: still "Free during closed beta" — no pricing commitment. PASS.
+- New sentinel needed: SECURITY.md exists at repo root + linked from FEEDBACK.md + index.html. PASS (manually verified).
+
+**Next audit due:** before v1.0 launch.
 
 ### 2026-05-11 — v0.10.9 feedback infrastructure (Archith)
 
